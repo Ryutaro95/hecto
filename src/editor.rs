@@ -59,6 +59,8 @@ impl Editor {
         Ok(())
     }
 
+    // Place text in the center of the screen
+    // (Screen width / 2) - String length
     fn draw_welcome_message(&self) {
         let mut welcome_message = format!("Hecto editor -- version {} \r", VERSION);
         let width = self.terminal.size().width as usize;
